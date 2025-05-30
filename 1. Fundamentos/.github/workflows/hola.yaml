@@ -1,0 +1,9 @@
+name: Mi Primer Workflow
+on: push  # Se ejecuta al hacer git push
+
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Decir Hola
+        run: echo "👋 ¡Hola desde GitHub Actions en mi Mac!"
