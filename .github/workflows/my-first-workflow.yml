@@ -1,0 +1,9 @@
+name: My First Workflow
+on: [push]  # Se ejecuta al hacer git push
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "🎉 ¡Mi primer workflow funciona!"
