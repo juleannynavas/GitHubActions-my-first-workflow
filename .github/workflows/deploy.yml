@@ -1,0 +1,15 @@
+name: "Deploy my-second-workflow"
+
+on:
+
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy-my-second-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Pull the code"
+      - run: echo "Running migration"
+      - run: echo "Generate binary"
+      - run: echo "Publish version"
